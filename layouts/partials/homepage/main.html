@@ -1,0 +1,123 @@
+<main>
+    <div class="image image1"></div>
+
+
+    <section id="when" class="section light">
+        <div class="section__svg">
+            {{ partial "svgs/leaf.svg" . }}
+        </div>
+        <h1 class="section__heading">La Boda</h1>
+        <section class="section__split">
+            <div>
+                <p class="section__subheading">Cuando</p>
+                <p class="section__text--bold">
+                    {{ .Params.when }}
+                </p>
+            </div>
+            <div>
+                <p class="section__subheading">Donde</p>
+                <p class="section__text--bold">
+                    {{ .Params.where.first }}
+                </p>
+                <p>
+                    {{ .Params.where.second }}
+                </p>
+            </div>
+        </section>
+        <section style="display:flex;flex-direction:column;align-items:center;">
+            <h2 style="margin-top:2rem;" class="section__heading">Speeches</h2>
+
+            <h3 style="margin-top:2rem;" class="section__heading">Father of Bride</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/XfCBomxy7K8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <h3 style="margin-top:2rem;" class="section__heading">Best Man</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JzArXpZgaOs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <h3 style="margin-top:2rem;" class="section__heading">Groom</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/NPhbs9SEmVc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+        </section>
+    </section>
+
+    <div class="image image2"></div>
+
+
+    <section id="horarios" class="section light">
+        <div class="section__svg">
+            {{ partial "svgs/leaves.svg" . }}
+        </div>
+
+        {{ $t := .Site.GetPage "/section/horarios" }}
+        <h1 class="section__heading">{{$t.Params.title}}</h1>
+        <section class="section__md-content">
+            {{ $t.Content }}
+        </section>
+    </section>
+
+    <div class="image image3"></div>
+
+    <section id="viaje-y-estancia" class="section light">
+        <div class="section__svg">
+            {{ partial "svgs/leaf.svg" . }}
+        </div>
+
+        {{ $t := .Site.GetPage "/section/viaje-y-estancia" }}
+        <h1 class="section__heading">{{$t.Params.title}}</h1>
+        <section class="section__md-content">
+            {{ $t.Content }}
+        </section>
+    </section>
+
+    <div class="image image1"></div>
+
+    <section id="como-vestirse" class="section light">
+        <div class="section__svg">
+            {{ partial "svgs/leaf.svg" . }}
+        </div>
+
+        {{ $t := .Site.GetPage "/section/como-vestirse" }}
+        <h1 class="section__heading">{{$t.Params.title}}</h1>
+        <section class="section__md-content">
+            {{ $t.Content }}
+        </section>
+    </section>
+    <section id="accesibilidad" class="section light">
+        {{ $t := .Site.GetPage "/section/accesibilidad" }}
+        <h1 class="section__heading">{{$t.Params.title}}</h1>
+        <section class="section__md-content">
+            {{ $t.Content }}
+        </section>
+    </section>
+    <section id="regalos" class="section light">
+        {{ $t := .Site.GetPage "/section/regalos" }}
+        <h1 class="section__heading">{{$t.Params.title}}</h1>
+        <section class="section__md-content">
+            {{ $t.Content }}
+        </section>
+    </section>
+
+    <div class="image image2"></div>
+
+    <section id="more" class="section light" style="text-align:center;">
+        <div class="section__svg">
+            {{ partial "svgs/leaf.svg" . }}
+        </div>
+        <p style="margin-bottom:1em;">Gracias por visitar nuestra web!</p>
+        <p style="margin-bottom:1em;">No podemos esperar a celebrar este día especial con vosotros y compartir un mismo techo con todos nuestros seres queridos bajo un mismo techo para SIEMPRE!</p>
+    </section>
+
+    <div class="scroll-top">
+        <a class="scroll-top__button" href="#top">
+            {{ partial "svgs/scroll-up.svg" . }}
+        </a>
+    </div>
+</main>
