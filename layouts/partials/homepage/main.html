@@ -2,7 +2,7 @@
     <div class="image image1"></div>
 
 
-    <section id="when" class="section light">
+    <section id="cuando" class="section light">
         <div class="section__svg">
             {{ partial "svgs/leaf.svg" . }}
         </div>
@@ -51,7 +51,7 @@
     <div class="image image2"></div>
 
 
-    <section id="horarios" class="section light">
+    <section id="horario" class="section light">
         <div class="section__svg">
             {{ partial "svgs/leaves.svg" . }}
         </div>
@@ -65,12 +65,12 @@
 
     <div class="image image3"></div>
 
-    <section id="viaje-y-estancia" class="section light">
+    <section id="viaje" class="section light">
         <div class="section__svg">
             {{ partial "svgs/leaf.svg" . }}
         </div>
 
-        {{ $t := .Site.GetPage "/section/viaje-y-estancia" }}
+        {{ $t := .Site.GetPage "/section/viaje" }}
         <h1 class="section__heading">{{$t.Params.title}}</h1>
         <section class="section__md-content">
             {{ $t.Content }}
