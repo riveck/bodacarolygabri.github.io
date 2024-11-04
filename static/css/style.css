@@ -12,7 +12,8 @@ body {
   background-color: var(--dusty-pink);
   font-family: var(--main-font);
 
-  position: absolute;
+  /* Uncomment the following for the original CSS */
+  /*position: absolute;*/
   min-width: 100vw;
 }
 
@@ -35,7 +36,7 @@ html {
 
 /* VARIABLES */
 :root {
-  --main-font: 'Noto Sans', sans-serif;
+  --main-font: 'Playwrite GB S', sans-serif;
 
   --cream: #FAF2DA;
   --light-green: #8E9775;
@@ -435,7 +436,11 @@ html {
 }
 
 .section__md-content {
-  text-align: left;
+  text-align: justify;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 800px) {
