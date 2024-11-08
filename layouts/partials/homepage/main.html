@@ -49,12 +49,12 @@
 
     <div class="image image3"></div>
 
-    <section id="viaje" class="section light">
+    <section id="como-llegar" class="section light">
         <div class="section__svg">
             {{ partial "svgs/leaf.svg" . }}
         </div>
 
-        {{ $t := .Site.GetPage "/section/viaje" }}
+        {{ $t := .Site.GetPage "/section/como-llegar" }}
         <h1 class="section__heading">{{$t.Params.title}}</h1>
         <section class="section__md-content">
             {{ $t.Content }}
