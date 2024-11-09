@@ -1,7 +1,7 @@
 ---
 draft: false
-when: "Sat 11th Feb 2023, 15:00 PM"
+when: "5 Julio 2025, 18:00"
 where:
-  first: "Ajuntament Castellbisbal"
-  second: "Desengaño 123, Castellbisbal 08755"
+  first: "Masia Castellarnau"
+  second: "Carrer de les Mares de la Plaça de Maig, 3, 08206 Sabadell, Barcelona"
 ---
