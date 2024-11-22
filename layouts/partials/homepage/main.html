@@ -37,7 +37,7 @@
             {{ $t.Content }}
         </section>
     </section>
-    <div class="image image4"></div>
+    <div class="image image4" style="background-size:contain; background-repeat:no-repeat;"></div>
     <section id="vienes-con-ninos" class="section light">
         <div class="section__svg">
             {{ partial "svgs/plane.svg" . }}
@@ -72,14 +72,12 @@
         <section class="section__md-content">
             {{ $t.Content }}
         </section>
-    </section>
-
-    <section id="regalos" class="section light">
+    
         <div class="section__svg">
             {{ partial "svgs/plane.svg" . }}
         </div>
         {{ $t := .Site.GetPage "/section/regalos" }}
-        <h1 class="section__heading">{{$t.Params.title}}</h1>
+        <h1 id="regalos" class="section__heading">{{$t.Params.title}}</h1>
         <section class="section__md-content">
             {{ $t.Content }}
         </section>
