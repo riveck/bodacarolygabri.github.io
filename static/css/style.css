@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: var(--dusty-pink);
+  background-color: var(--cream);
   font-family: var(--main-font);
 
   /* Uncomment the following for the original CSS */
@@ -27,7 +27,7 @@ html {
   height: 50vh;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .google-map {
     width: 600;
     height: 450;
@@ -37,8 +37,9 @@ html {
 /* VARIABLES */
 :root {
   --main-font: 'Playwrite GB S', sans-serif;
-
+  --main-color: #591123;
   --cream: #FAF2DA;
+  --dark-cream: #7a6f54;
   --light-green: #8E9775;
   --dark-green: #4A503D;
   --dusty-pink: #E28F83;
@@ -47,13 +48,13 @@ html {
 /* IMAGES - DESKTOP PARALLAX SCROLLING */
 
 .image {
-  height: 40vh;
+  height: 50vh;
   background-size: cover;
   background-position: bottom;
   filter: saturate(0);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
 
   .image {
     min-height: 200px;
@@ -64,7 +65,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
 
-    height: 500px;
+    height: 50vh;
   }
 }
 
@@ -77,9 +78,8 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--dusty-pink);
-  color: var(--cream);
-  text-shadow: var(--dark-green) 2px 2px 0px;
+  background-color: var(--cream);
+  color: var(--main-color);
   letter-spacing: 2px;
 
   height: 100vh;
@@ -90,7 +90,7 @@ html {
   height: auto;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .header {
     min-height: fit-content;
   }
@@ -116,7 +116,7 @@ html {
   font-size: 2rem;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .header__text--light {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -153,8 +153,9 @@ html {
   height: 80px;
   cursor: pointer;
   transition: all .5s ease-in-out;
-  background-color: var(--dusty-pink);
+  background-color: var(--main-color);
   border-radius: 50%;
+  margin-right: 10px;
 }
 
 .nav-mobile__burger {
@@ -201,7 +202,7 @@ html {
 
 .nav-mobile__menu {
   display: none;
-  background-color: var(--dusty-pink);
+  background-color: var(--main-color);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -216,7 +217,7 @@ html {
   align-items: center;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .nav-desktop {
     position: fixed;
     top: 0;
@@ -225,7 +226,7 @@ html {
 
     padding: 20px 20%;
     width: 100%;
-    background-color: var(--dusty-pink);
+    background-color: var(--main-color);
 
     display: flex;
     flex-direction: row;
@@ -289,7 +290,7 @@ html {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .scroll-top__button {
     width: 10%;
     height: 10%;
@@ -323,28 +324,28 @@ html {
 
 .section__split div:nth-child(1) {
   border-right: none;
-  border-bottom: solid 2px var(--dusty-pink);
+  border-bottom: solid 2px var(--main-color);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .section__split {
     flex-direction: row;
   }
 
   .section__split div:nth-child(1) {
-    border-right: solid 2px var(--dusty-pink);
+    border-right: solid 2px var(--main-color);
     border-bottom: none;
   }
 }
-
+/*
 .section__svg svg {
   width: 15%;
   height: 15%;
 }
-
+*/
 
 .section.light {
-  color: var(--dark-green);
+  color: var(--dark-cream);
   background-color: var(--cream);
 }
 
@@ -355,17 +356,17 @@ html {
   background-color: var(--light-green);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .section {
     min-height: 200px;
     padding: 50px 20px;
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .section {
     min-height: 300px;
-    padding: 5% 20%;
+    padding: 5% 10%;
   }
 }
 
@@ -397,7 +398,7 @@ html {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: var(--cream);
+  color: var(--dark-cream);
   font-size: 75%;
 }
 
@@ -415,13 +416,13 @@ html {
 .footer a:visited,
 .footer a:hover,
 .footer a:active {
-  color: var(--cream);
+  color: var(--dark-cream);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .footer {
     text-align: right;
-    color: var(--cream);
+    color: var(--dark-cream);
     font-size: inherit;
   }
 
@@ -443,7 +444,7 @@ p {
   margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .section__md-content p {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -460,7 +461,7 @@ p {
 
 /* STANDALONE PAGE SPECIFIC */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .standalone {
     padding-top: 100px;
     /* avoid overlap with menu on desktop*/
@@ -491,7 +492,7 @@ blockquote {
   color: var(--light-green)
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   blockquote {
     width: 75%;
   }

@@ -4,18 +4,18 @@
 
     <section id="cuando" class="section light">
         <div class="section__svg">
-            {{ partial "svgs/leaf.svg" . }}
+            {{ partial "svgs/plane.svg" . }}
         </div>
         <h1 class="section__heading">La Boda</h1>
         <section class="section__split">
             <div>
-                <p class="section__subheading">Cuando</p>
+                <p class="section__subheading">Fecha y hora</p>
                 <p class="section__text--bold">
                     {{ .Params.when }}
                 </p>
             </div>
             <div>
-                <p class="section__subheading">Donde</p>
+                <p class="section__subheading">Lugar de la ceremonia</p>
                 <p class="section__text--bold">
                     {{ .Params.where.first }}
                 </p>
@@ -23,6 +23,9 @@
                     {{ .Params.where.second }}
                 </p>
             </div>
+        </section>
+        <section class="section__md-content">
+            <p>Después de la ceremonia, seguiremos la celebración en el mismo sitio y terminaremos la noche con baile y barra libre hasta las 3:00 a.m.</p>
         </section>
     </section>
 
@@ -34,13 +37,12 @@
             {{ $t.Content }}
         </section>
     </section>
-
-    <section id="horario" class="section light">
+    <div class="image image4"></div>
+    <section id="vienes-con-ninos" class="section light">
         <div class="section__svg">
-            {{ partial "svgs/leaves.svg" . }}
+            {{ partial "svgs/plane.svg" . }}
         </div>
-
-        {{ $t := .Site.GetPage "/section/horarios" }}
+        {{ $t := .Site.GetPage "/section/vienes-con-ninos" }}
         <h1 class="section__heading">{{$t.Params.title}}</h1>
         <section class="section__md-content">
             {{ $t.Content }}
@@ -51,7 +53,7 @@
 
     <section id="como-llegar" class="section light">
         <div class="section__svg">
-            {{ partial "svgs/leaf.svg" . }}
+            {{ partial "svgs/plane.svg" . }}
         </div>
 
         {{ $t := .Site.GetPage "/section/como-llegar" }}
@@ -61,12 +63,9 @@
         </section>
     </section>
 
-    <div class="image image4"></div>
+    <div class="image image6"></div>
 
     <section id="como-vestirse" class="section light">
-        <div class="section__svg">
-            {{ partial "svgs/leaf.svg" . }}
-        </div>
 
         {{ $t := .Site.GetPage "/section/como-vestirse" }}
         <h1 class="section__heading">{{$t.Params.title}}</h1>
@@ -76,6 +75,9 @@
     </section>
 
     <section id="regalos" class="section light">
+        <div class="section__svg">
+            {{ partial "svgs/plane.svg" . }}
+        </div>
         {{ $t := .Site.GetPage "/section/regalos" }}
         <h1 class="section__heading">{{$t.Params.title}}</h1>
         <section class="section__md-content">
@@ -87,10 +89,13 @@
 
     <section id="more" class="section light" style="text-align:center;">
         <div class="section__svg">
-            {{ partial "svgs/leaf.svg" . }}
+            {{ partial "svgs/plane.svg" . }}
         </div>
-        <p style="margin-bottom:1em;">Gracias por visitar nuestra web!</p>
-        <p style="margin-bottom:1em;">No podemos esperar a celebrar este día especial con vosotros y compartir un mismo techo con todos nuestros seres queridos bajo un mismo techo para SIEMPRE!</p>
+        {{ $t := .Site.GetPage "/section/more" }}
+        <h1 class="section__heading">{{$t.Params.title}}</h1>
+        <section class="section__md-content">
+            {{ $t.Content }}
+        </section>
     </section>
 
     <div class="scroll-top">
